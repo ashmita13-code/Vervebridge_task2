@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online learning website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--inline CSS-->
+    <style>
+    .container {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1.fly-in {
+    font-size: 2.5em;
+    margin: 0;
+    opacity: 0;
+    color:rgb(11, 113, 113);
+    transform: translateX(-100%);
+    animation: flyIn 2s forwards;
+}
+ 
+p.content {
+    font-size: 1.2em;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn 2s 2s forwards; /* Starts after the heading animation */
+    background-color:beige;
+    padding:40px;
+    border-radius:8px;
+    
+} 
+
+/* Animation for heading */
+@keyframes flyIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Animation for content */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+ 
+
+.container {
+    perspective: 1000px; /* Creates a 3D effect */
+}
+
+
+.zoom-paragraph {
+    font-size: 16px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #cc93bdcc;
+    border:none;
+    border-radius: 8px;
+    transition: transform 0.3s ease, margin-top 0.3s ease; /* Smooth transition for transform and margin-top */
+}
+
+.zoom-paragraph:hover {
+    transform: scale(1.0); /* Zoom in the paragraph */
+    margin-top:-20px; /* Move the paragraph up */
+}
+.head2{
+    font-size: 2.1em;
+    color:rgb(213, 33, 117);
+}
+    </style>
+    </head>
+    <body class="main">
+       <header>
+            <img src="ab4.png" width="1280" height="600">
+        </header><br>
+
+        
+        <!--about us-->
+        <div class="container">
+            <h1 class="fly-in">About us</h1>
+            <p class="content">Welcome to <b>SmartLearning Hub</b>! Dive into the knowledge and learning right from the comfort of your own space<br>
+            Our platform offers a wide range of courses designed to help you expands your skills, explore new interests,<br> and achieve your goals.<br>
+        Whether you are a student, a professional looking to up your skills or someone passionate about learning,<br>
+    you will find something just for you here. Join our community of learners and start a journey of discovery and growth with us!</p>
+        </div><br>
+        <!--about us-->
+        
+
+        <div class="container">
+            <h2 class="head2">Our Objective</h2><br>
+            <p class="zoom-paragraph">Our objective is to provide easy access to educational resources and courses for learners.<br>
+            Moreover, we want to offer a flexible learning environment that will help the learners to study at their own pace.</p>
+        <br><br>
+
+            <h3 class="head2">Our Vision</h3><br>
+            <p class="zoom-paragraph">Our vision is to provide a dynamic and inclusive learning platform that empowers individuals<br> to unlock their full potential through
+                personalised learning experiences.
+             </p><br>
+    
+            <h4 class="head2">Our Services</h4><br>
+            <p class="zoom-paragraph">We provide a variety of services to enhance the learning experience of the learners.
+            Easy access to the course materials like videos of lectures, quizzes etc. You can ask questions and can give the feedback regarding the videos 
+        and the quizzes.</p>
+        </div>
+
+       <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>   
+    </body>
+    </html>

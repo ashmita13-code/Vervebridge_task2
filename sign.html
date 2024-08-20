@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online learning website</title>
+    <style>
+    body{
+        background-color: rgb(167, 112, 219);
+    }
+.wrapper
+{
+ background-color:white;
+ height:70vh;
+ border-radius:23px;
+ width:60vh;
+ padding:40px;
+ align-items: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ margin-left:35%;
+ margin-top:4%;
+ border:none;
+ 
+ }
+
+h1{
+    font-size:35px;
+    padding:3px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom:10px;
+}
+form{
+    width:min(400px,100%);
+    margin-top: 10px;
+    margin-bottom:12px;
+    gap:10px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+form > div{
+    display: flex;
+    justify-content:center;
+    padding:4px;
+    
+    
+}
+form label{
+    padding: 5px;
+    font-size: 16px;
+    height:10px;
+    margin-left:5px;
+    margin-right:20px;
+}
+
+form input{
+    box-sizing:border-box;
+    width:200px;
+    padding: 6px;
+    background-color:rgba(220, 197, 237, 0.913);
+    justify-content: center;
+    border-radius:7px;
+    border:2px;
+}
+form input:hover{
+    background-color: rgb(231, 222, 160);
+}
+
+form input::placeholder
+{
+ color:rgb(95, 6, 179);
+}
+
+form button{
+    border-radius:100px;
+    border:none;
+    font-size:14px;
+    background-color:rgb(95, 6, 179);
+    padding:10px;
+    margin-top: 12px;
+    cursor:pointer;
+    width:40%;
+    
+}
+form button:hover{
+    background-color:rgb(9, 15, 102);
+}
+
+p{
+   font-size:15px;
+}
+    </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1><b>Sign In</b></h1>
+            
+                <form>
+                    <div>
+                        <label>Firstname</label>
+                        <input type="text" name="fn" placeholder="firstname" id="first-name" required="required">
+                    </div>
+                    <div>
+                        <label>Lastname</label>
+                        <input type="text" name="ln" placeholder="lastname" id="last-name" required="required">
+                    </div>
+                    <div>
+                        <label>Email Id</label>
+                        <input type="email" name="em" placeholder="email" id="email-input" required="required">
+                    </div>
+                    <div>
+                        <label>Password</label>
+                        <input type="password" name="pass" placeholder="password" id="password" required="required">
+                    </div>
+                    <div>
+                        <label>Confirm</label>
+                        <input type="password" name="confirm" placeholder="confirm password" id="confirm_password" required="required">
+                    </div>
+                    <button type="submit" href="login.html"><font color="white">Sign In</font></button>
+                </form>
+                <p>Already have an account?<a href="login.html">Login</a></p>
+                </div>
+    </body>
+    </html>

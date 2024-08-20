@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online learning website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            background-image:url(bg.png);
+            position: relative;
+        }
+        
+        
+        .fly-text {
+            font-size: 3.5rem;
+            margin-top:250px;
+            font-weight: bold;
+            color: #cac9c9;
+            opacity: 0;
+            transform: translateY(-50px);
+            animation: flyIn 1s ease-out forwards;
+            margin-left:10px;
+            
+        }
+        
+       @keyframes flyIn {
+            to {
+                opacity:1;
+                transform: translateY(0);
+            }
+        }
+        .bttn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding:4px;
+            width:100px;
+        }
+       
+ .dropdown {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.dropdown-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    margin:10px;
+    padding: 7px;
+    width:100px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius:5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #91c9f4;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropdown-button {
+    background-color: #0056b3;
+}
+
+.container {
+    margin-top:24px;
+    margin-left:220px;
+}
+
+.form-control{
+    width: 250px; /* Adjusts the width of the search input */
+    border-radius:2px;
+    
+}
+
+.image-content{
+      flex-direction:row;
+      display:flex;
+      float:right;
+      margin-left:150px;
+
+    }
+
+.image-content img {
+          padding:10px;
+          border-radius:20px;
+ }
+    </style>
+</head>
+<body>
+    
+   <div class="text-center">
+        <div class="fly-text">Welcome to SmartLearning Hub!</div>
+    </div>
+    
+    <!--sign_in button-->
+    <div class="bttn">
+        <a class="btn btn-primary" href="sign.html">Sign In</a>
+    </div>
+   
+
+    <!--dropdown menu-->
+    <div class="nav">
+    <div class="dropdown">
+        <button class="dropdown-button">Menu</button>
+        <div class="dropdown-content">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="online.html">Online Courses</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Search Form -->
+        <form class="d-flex">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-info" type="submit">Search</button>
+        </form>
+    </div>
+    
+    <!--inserting image-->
+      <div class="image-content">
+        <img src="h_pic.png" height="370" width="400">
+        
+      </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

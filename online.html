@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online learning website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--inline CSS-->
+    <style>
+    body{
+       background-color:black; 
+      
+     }
+    img{
+      border-radius:25px; 
+      padding:4px;
+    }
+    .navbar-brand{
+        color:white;
+    
+    }
+    .navbar-brand:hover{
+       color: rgb(255, 255, 255);
+    }
+    .nav-link{
+        color:white;
+    }
+    .nav-link:hover{
+       color: rgba(255, 255, 255, 0.676);
+    }
+
+    .bounce {
+    animation: bounce 2s infinite;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    font-size:67px;
+    margin-top:160px;
+    padding: 50px;
+
+  }
+/* Adding bounce animation to the heading*/
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+   
+.image-content{
+      flex-direction:row;
+      display:flex;
+      float:right;
+   
+    }
+
+.image-content img {
+          border-radius:2px;
+ }
+     
+
+.container {
+    text-align: center;
+    position: relative;
+    background-color: rgb(229, 235, 235);
+    padding:50px;
+    margin:30px;
+    border-radius:10px;
+}
+.head2{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:rgba(61, 4, 113, 0.767);
+  font-size: 25px;
+  padding:10px;
+}
+.fly-in {
+    opacity: 0;
+    position: relative;
+    padding:20px;
+    transition: opacity 1.0s ease-out, transform 1.0s ease-out;
+    background-color: rgba(195, 168, 220, 0.669);
+    border-radius:10px;
+
+}
+
+.from-right {
+    transform: translateX(100%);
+}
+
+.from-left {
+    transform: translateX(-100%);
+}
+
+.visible {
+    opacity:1;
+    transform: translateX(0);
+}
+    </style>
+    </head>
+    <body>
+     
+        <!--creating navigation bar-->
+    <nav class="navbar navbar-expand-lg bg-dark border-body">
+        <div class="container-fluid">
+          <img src="logo.jpg"  width="90" height="70">
+          <a class="navbar-brand" href="online.html"><b>SmartLearning Hub </b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> 
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Available Courses
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="web.html">Web development</a></li>
+                  <li><a class="dropdown-item" href="java.html">Java</a></li>
+                  <li><a class="dropdown-item" href="python.html">Python</a></li>
+                  <li><a class="dropdown-item" href="cyber.html">Cyber Security</a></li>
+                </ul>
+              </li>
+            </ul>
+            </ul>
+          </div>
+        </div>
+      </nav> 
+    <!--navigation bar ends-->  
+
+       <!--inserting image-->
+       <div class="image-content">
+        <img src="obg1.gif" height="500" width="550">
+        </div>
+
+
+        <h1 class="bounce">ONLINE COURSES</h1><br><br><br><br><br><br><br><br><br><br>
+
+        <div class="container">
+          <h2 class="head2">COURSES WE OFFER:</h2>
+          <p class="fly-in" id="para1"><b>Web development</b> is the process of creating websites or web applications.
+          It involves designing, building, and maintaining websites using programming languages such as HTML, CSS, Javascript etc.
+        Web development includes both frontend as well as backend of a website.<br> The goal of web development is to create user-friendly websites
+      that meet the needs of the clients or users.</p><br>
+
+          <p class="fly-in" id="para2"><b>Java</b> is a high-level language known for its portabiity, meaning that Java programs can run on various platforms without the need of recompilation. It is widely used for developing applications ranging from mobile apps to enterprise software.
+        Java is also known for its robustness,security features, and scalability which makes it a popular language.</p><br>
+
+          <p class="fly-in" id="para3"><b>Python</b> is also a high-level programmimg known for its simplicity and readability. It emphasizes code readability and ease of use,
+            making it a popular choice for beginners and experienced programmers. It is widely used in various fields such as web
+            development, data science,<br> artificial intellingence etc due its extensive libraries.</p><br>
+
+          <p class="fly-in" id="para4"><b>Cyber Security</b> rovides foundational and advanced knowledge on protecting digital systems and data from cyber threats.
+          Cybersecurity <br>aims to defend against cyber threats such as malware, phishing, ransomware, other malicious activities that<br>
+        can compromise the security and privacy of digital assets. Organisations implement cybersecurity measures to reduce the risk <br>
+      of cyberattacks and protect sensitive information from unauthorized access.</p>
+      </div>
+         
+      <script src="jss.js"></script>
+       <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>   
+    </body>
+    </html>
